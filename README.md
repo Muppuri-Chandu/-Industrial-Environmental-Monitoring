@@ -12,7 +12,7 @@ LPC2148**
 ![Core](https://img.shields.io/badge/Core-ARM7TDMI--S-244A7C?style=for-the-badge)
 ![Language](https://img.shields.io/badge/Language-Embedded%20C-00599C?style=for-the-badge)
 ![Interface](https://img.shields.io/badge/Display-16%C3%972%20LCD-5B8C3A?style=for-the-badge)
-:::
+
 
 ------------------------------------------------------------------------
 
@@ -621,4 +621,3 @@ been validated on the physical board.
 project.**
 
 `LPC2148` · `Embedded C` · `LM35` · `RTC` · `ADC` · `LCD` · `UART0`
-:::
