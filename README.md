@@ -603,16 +603,28 @@ files into these folders.*
 
 ## 🚀 Project Status
 
-The supplied firmware contains the core monitoring, display, keypad
-configuration, RTC, UART and threshold-alert modules. The latest
-uploaded build artifacts include
-`Industrial_Environmental_Monitoring.axf`, its linker map (`.map`), call
-graph (`.htm`), scatter-loading file (`.sct`) and linker command file
-(`.lnp`). Their presence confirms that Keil produced and linked the ARM7
-image. The linker map reports approximately 10.70 KB of code/read-only
-data and 1.35 KB of read/write plus zero-initialized data. This confirms
-the build output, but does not by itself prove that every peripheral has
-been validated on the physical board.
+The **Industrial Environmental Monitoring System** has been developed around the NXP LPC2148 ARM7 microcontroller. The firmware includes temperature monitoring using the LM35 sensor, the microcontroller's built-in RTC for date and time, 16×2 LCD display, 4×4 keypad-based configuration, UART0 serial communication, external interrupt-based configuration access and threshold-based buzzer alerts.
+
+The project source files have been organized into separate folders for application code, peripheral drivers, header files and pin/peripheral macro definitions.
+
+**Keil µVision Build Status:** Successfully compiled and linked for the LPC2148 target. The generated ARM executable image (`Industrial_Environmental_Monitoring.axf`) and linker reports confirm successful image generation.
+
+**Build Memory Summary:**
+- Code + Read-Only Data: Approximately 10.70 KB
+- Read-Write + Zero-Initialized Data: Approximately 1.35 KB
+- Target Flash Configuration: 512 KB
+- Target RAM Configuration: 32 KB
+
+**Hardware Interface Summary:**
+- LM35 temperature sensor: ADC0.1 (P0.28)
+- 16×2 LCD: P0.5–P0.14
+- Buzzer: P0.18
+- Configuration switch: P0.3 (EINT1)
+- UART0: P0.0 (TXD0), P0.1 (RXD0)
+- RTC: Internal LPC2148 RTC
+- Keypad: P1.16–P1.23
+
+**Current Stage:** Firmware compilation and linking completed. Hardware interface implementation and output demonstrations are documented through the project images and illustrative output mockups. Successful compilation does not independently establish complete physical hardware validation.
 
 ------------------------------------------------------------------------
 
