@@ -30,26 +30,7 @@ presents the live readings, while a keypad-based menu allows the user to
 edit clock information and the temperature threshold. UART0 sends
 monitoring information to a serial terminal.
 
-> **Hardware scope:** This README documents the physical LPC2148
-> development board shown below. Proteus simulation is not used as the
-> hardware reference for this document.
 
-## 📸 Physical Hardware Setup
-
-<img width="1448" height="1086" alt="board" src="https://github.com/user-attachments/assets/b4c8c49d-1c8a-4d13-b988-03c358f60a03" />
-
-```
-## 📸 Physical Hardware Setup
-
-*Physical ARM7 development board with LCD, LM35, keypad and indicated wiring.*
-```
-Physical ARM7 development board labelled LPC2148. The
-coloured lines in the supplied photograph illustrate the project's
-intended peripheral connections; confirm each jumper against the board
-header labels before powering the circuit.
-```
-
-------------------------------------------------------------------------
 
 ## ✨ What the System Does
 
@@ -117,6 +98,21 @@ User switch → configuration menu → keypad → edit RTC / threshold
 
 ------------------------------------------------------------------------
 
+## 📸 Physical Hardware Setup
+
+<img width="1448" height="1086" alt="board" src="https://github.com/user-attachments/assets/b4c8c49d-1c8a-4d13-b988-03c358f60a03" />
+
+```
+## 📸 Physical Hardware Setup
+
+*Physical ARM7 development board with LCD, LM35, keypad and indicated wiring.*
+```
+Physical ARM7 development board labelled LPC2148. The
+coloured lines in the supplied photograph illustrate the project's
+intended peripheral connections; confirm each jumper against the board
+header labels before powering the circuit.
+
+----------------------------------------------------------------------
 ## 🧩 Hardware Platform & Components
 
 The physical board in the photograph is labelled **LPC2148** and is an
