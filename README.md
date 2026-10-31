@@ -36,10 +36,10 @@ monitoring information to a serial terminal.
 
 ## 📸 Physical Hardware Setup
 
+<img width="1448" height="1086" alt="board" src="https://github.com/user-attachments/assets/b4c8c49d-1c8a-4d13-b988-03c358f60a03" />
 
 ```
-<img width="1448" height="1086" alt="board" src="https://github.com/user-attachments/assets/ec84863f-8721-48ff-bb62-bf78d116bf3e" />
-
+## 📸 Physical Hardware Setup
 
 *Physical ARM7 development board with LCD, LM35, keypad and indicated wiring.*
 ```
@@ -172,6 +172,9 @@ regulator part numbers are not fully established by the supplied
 firmware; they are therefore not guessed in this table.*
 
 ------------------------------------------------------------------------
+### Circuit Block Diagram
+
+<img width="1536" height="1024" alt="Industrial Environmental Monitoring System" src="https://github.com/user-attachments/assets/87cb4f7f-9a37-4b6e-a18d-6bf330ebb9e1" />
 
 ## 🔗 Firmware Pin Map
 
@@ -432,6 +435,42 @@ SD-card, EEPROM or filesystem-based persistent log store.
 > `.map`, `.htm`, `.sct` and `.lnp` files are build/linker reports and
 > configuration inputs; they are useful for debugging but are not
 > normally required as source files in the GitHub repository.
+
+
+
+### Output Results 
+Disclaimer: The LCD screens and UART records below are illustrative mockups based on the uploaded firmware's LCD strings and UART output format. They are not actual photographs or measurements from the LPC2148 board.
+
+## LCD output states
+
+<img width="1200" height="2080" alt="LCD_Output_Mockups_Overview (1)" src="https://github.com/user-attachments/assets/8f944c76-c622-4398-85f0-1f59fb99e995" />
+
+The mockups cover the normal monitoring display, main menu, RTC menu, time/date entry prompts, weekday selection, invalid input feedback, day/time save messages, threshold configuration and over-temperature alert.
+
+## UART0 serial output
+
+Normal monitoring records
+(Info_On_UART() sends when SEC == 59; values below are illustrative):
+07/05/2026    03:21:59     32.45°C
+07/05/2026    03:22:59     32.60°C
+07/05/2026    03:23:59     34.10°C
+
+Over-temperature records
+(ALERT_Info_On_UART() is called when tt > TT; values are illustrative):
+Temp: 36.20°C @07/05/2026    03:24:05 -OVER TEMP!
+Temp: 37.05°C @07/05/2026    03:24:06 -OVER TEMP!
+Temp: 36.70°C @07/05/2026    03:24:07 -OVER TEMP!
+
+Configuration events (message text from the firmware):
+ ***Main Menu Mode Activated***
+ ***Time Editing Mode Activated***
+ ***Exit From Time Editing Mode***
+ ***Threshold Temp Editing Mode Activated***
+ ***Exit From Threshold Temp Editing Mode***
+ ***Exit From Editing Mode***
+
+ <img width="1536" height="1024" alt="ChatGPT Image Oct 31, 2026, 08_57_49 AM" src="https://github.com/user-attachments/assets/a5638d27-aa6d-40a9-af28-82a1de46fbf7" />
+
 
 ### Build and hardware bring-up checklist
 
