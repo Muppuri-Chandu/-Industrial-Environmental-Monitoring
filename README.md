@@ -1,4 +1,4 @@
-::: {align="center"}
+
 # 🏭 Industrial Environmental Monitoring
 
 ### Real-Time Environmental Sensing · RTC · Threshold Alert · UART Telemetry
@@ -6,7 +6,7 @@
 **An ARM7-based embedded monitoring system built around the NXP
 LPC2148**
 
-`<br>`{=html}
+
 
 ![Platform](https://img.shields.io/badge/MCU-NXP%20LPC2148-087E8B?style=for-the-badge)
 ![Core](https://img.shields.io/badge/Core-ARM7TDMI--S-244A7C?style=for-the-badge)
@@ -36,24 +36,17 @@ monitoring information to a serial terminal.
 
 ## 📸 Physical Hardware Setup
 
-```{=html}
-<p align="center">
+
 ```
-`<img src="hardware/board-connection-diagram/lpc2148_hardware_board.jpg"
-       alt="LPC2148 ARM7 development board with LCD, LM35, keypad and indicated wiring"
-       width="100%">`{=html}
-```{=html}
-</p>
+<img width="1448" height="1086" alt="board" src="https://github.com/user-attachments/assets/ec84863f-8721-48ff-bb62-bf78d116bf3e" />
+
+
+*Physical ARM7 development board with LCD, LM35, keypad and indicated wiring.*
 ```
-```{=html}
-<p align="center">
-```
-`<sub>`{=html}Physical ARM7 development board labelled LPC2148. The
+Physical ARM7 development board labelled LPC2148. The
 coloured lines in the supplied photograph illustrate the project's
 intended peripheral connections; confirm each jumper against the board
-header labels before powering the circuit.`</sub>`{=html}
-```{=html}
-</p>
+header labels before powering the circuit.
 ```
 
 ------------------------------------------------------------------------
@@ -588,7 +581,7 @@ been validated on the physical board.
 
 ------------------------------------------------------------------------
 
-::: {align="center"}
+
 **Built as an Embedded Systems / ARM7 hardware--software integration
 project.**
 
